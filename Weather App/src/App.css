@@ -1,0 +1,65 @@
+/* Reset body styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Overall container styling */
+.weather-container {
+  width: 100%;
+  max-width: 500px;
+  /* background-color: #fff; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Flexbox for input and button */
+.weather-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.weather-input-container input,
+.weather-input-container button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.weather-input-container input {
+  flex: 1; /* Make input expand */
+  border-radius: 5px 0 0 5px; /* Rounded corners for the left */
+}
+
+.weather-input-container button {
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0; /* Rounded corners for the right */
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.weather-input-container button:hover {
+  background-color: #0056b3;
+}
+
+.weather-info {
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #444;
+}
